@@ -1,0 +1,27 @@
+.searchBar {
+  display: flex;
+  width: 400px;
+  background: #fff;
+  border-radius: 4px;
+  align-items: center;
+}
+.searchBar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 4px 0 0 4px;
+  font-family: "Poppins", sans-serif;
+}
+.searchBar button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0 15px;
+  border-radius: 0 4px 4px 0;
+  font-size: 18px;
+  color: var(--qtify-black);
+  display: flex;
+  align-items: center;
+}

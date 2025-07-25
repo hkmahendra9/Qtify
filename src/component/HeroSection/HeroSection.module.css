@@ -1,0 +1,24 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 36px;
+  background-color: var(--qtify-dark);
+}
+.hero h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.hero h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.hero img {
+  height: 180px;
+  max-width: 270px;
+}
