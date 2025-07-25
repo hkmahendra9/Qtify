@@ -1,24 +1,31 @@
 .hero {
+  background-color: black;
+  width: 100vw;
+  padding-left: 10px;
+}
+
+.heroContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 36px;
-  background-color: var(--qtify-dark);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 36px 35px 36px; /* Match Figma for vertical spacing */
+  width: 100%;
 }
-.hero h1 {
+.heroContent h1 {
   color: #fff;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
 }
-.hero h2 {
+.heroContent h2 {
   color: #fff;
   font-size: 22px;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
 }
-.hero img {
+.heroContent img {
   height: 180px;
   max-width: 270px;
 }

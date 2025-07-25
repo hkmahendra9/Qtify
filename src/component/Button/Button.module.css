@@ -1,6 +1,6 @@
 .button {
-  background-color: var(--qtify-black);
-  color: var(--qtify-primary-green);
+  background-color: black; /* Or use var(--qtify-black) if defined */
+  color: #22c55e; /* Or var(--qtify-primary-green) if you have a variable */
   padding: 10px 24px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -10,6 +10,7 @@
   font-weight: 600;
   transition: background 0.2s;
 }
+
 .button:hover {
-  background-color: #232323;
+  background-color: #232323; /* Slightly lighter black on hover, optional */
 }

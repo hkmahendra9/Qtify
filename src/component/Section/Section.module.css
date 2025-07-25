@@ -1,5 +1,9 @@
 .section {
-  margin: 40px 36px;
+  /* margin: 40px 36px; */
+      background-color: black;
+       padding-left: 32px;
+  padding-right: 32px;
+  
 }
 .header {
   display: flex;
@@ -11,7 +15,7 @@
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #222;
+  color: white;
 }
 .grid {
   display: flex;

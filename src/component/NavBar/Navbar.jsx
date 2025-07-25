@@ -7,9 +7,11 @@ import Button from '../Button/Button';
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <Logo />
-      <SearchBar />
-      <Button>Give Feedback</Button>
+      <div className={styles.navbarContent}>
+        <Logo />
+        <SearchBar />
+        <Button>Give Feedback</Button>
+      </div>
     </nav>
   );
 }

@@ -2,26 +2,42 @@
   display: flex;
   width: 400px;
   background: #fff;
-  border-radius: 4px;
-  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
 .searchBar input {
   flex: 1;
   border: none;
   outline: none;
-  font-size: 16px;
-  padding: 10px 12px;
-  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  padding: 0 12px;
   font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: #222;
 }
+
+.searchBar input::placeholder {
+  color: #666;
+  font-size: 13px;
+}
+
 .searchBar button {
   border: none;
-  background: none;
+  background: transparent;
   cursor: pointer;
-  padding: 0 15px;
-  border-radius: 0 4px 4px 0;
-  font-size: 18px;
-  color: var(--qtify-black);
+  padding: 0 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  color: #000;
+  font-size: 16px;
+}
+
+.searchBar button:hover {
+  background-color: #f2f2f2;
 }

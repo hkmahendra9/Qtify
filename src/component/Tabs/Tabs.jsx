@@ -9,7 +9,7 @@ import axios from "axios";
 const genresEndpoint = "https://qtify-backend-labs.crio.do/genres";
 const songsEndpoint = "https://qtify-backend-labs.crio.do/songs";
 
-export default function SongsSection() {
+export default function SongsSection() {  
   const [songs, setSongs] = useState([]);    
   const [genres, setGenres] = useState([]);   
   const [tab, setTab] = useState("all");
