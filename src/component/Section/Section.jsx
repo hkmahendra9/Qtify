@@ -25,7 +25,7 @@ export default function Section({
       <h2>{title}</h2>
       {showCollapse && (
         <Button onClick={() => setCollapsed(c => !c)}>
-          {collapsed ? "Show All" : "Collapse"}
+          {collapsed ? "Collapse" : "Show All"}
         </Button>
       )}
     </div>
