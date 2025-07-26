@@ -11,7 +11,7 @@
 import Navbar from './component/NavBar/Navbar';
 import HeroSection from './component/HeroSection/HeroSection';
 import Section from './component/Section/Section';
-// import SongsSection from './component/SongsSection/SongsSection';
+import SongsSection from './component/SongsSection/SongsSection';
 // function App() {
 //   return (
 //     <div className="App">
@@ -51,7 +51,7 @@ function App() {
         title="New Albums"
         fetchUrl="https://qtify-backend-labs.crio.do/albums/new"
       />
-      {/* <SongsSection /> */}
+      <SongsSection />
     </>
   );
 }
