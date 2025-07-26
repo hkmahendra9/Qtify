@@ -20,39 +20,42 @@ export default function Section({
 
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
-        <h2>{title}</h2>
-        {showCollapse && (
-          <Button onClick={() => setCollapsed(c => !c)}>
-            {collapsed ? "Show All" : "Collapse"}
-          </Button>
-        )}
-      </div>
-      {showCollapse && collapsed ? (
-        <Carousel>
-          {data.map(album => (
-            <Card
-              key={album.id}
-              image={album.image}
-              title={album.title}
-              follows={album.follows}
-              type={cardType}
-            />
-          ))}
-        </Carousel>
-      ) : (
-        <div className={styles.grid}>
-          {data.map(album => (
-            <Card
-              key={album.id}
-              image={album.image}
-              title={album.title}
-              follows={album.follows}
-              type={cardType}
-            />
-          ))}
-        </div>
+  <div className={styles.sectionContent}>
+    <div className={styles.header}>
+      <h2>{title}</h2>
+      {showCollapse && (
+        <Button onClick={() => setCollapsed(c => !c)}>
+          {collapsed ? "Show All" : "Collapse"}
+        </Button>
       )}
-    </section>
+    </div>
+    {showCollapse && collapsed ? (
+      <Carousel>
+        {data.map(album => (
+          <Card
+            key={album.id}
+            image={album.image}
+            title={album.title}
+            follows={album.follows}
+            type={cardType}
+          />
+        ))}
+      </Carousel>
+    ) : (
+      <div className={styles.grid}>
+        {data.map(album => (
+          <Card
+            key={album.id}
+            image={album.image}
+            title={album.title}
+            follows={album.follows}
+            type={cardType}
+          />
+        ))}
+      </div>
+    )}
+  </div>
+</section>
+
   );
 }
